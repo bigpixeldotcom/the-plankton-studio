@@ -27,10 +27,12 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.2",
+    "@types/node": "^25.0.2",
     "@types/react": "^19.1",
     "eslint": "^9.28",
     "prettier": "^3.5",
     "typescript": "^5.8",
+    "vite": "^7.2.7",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "prettier": {

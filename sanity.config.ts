@@ -1,14 +1,12 @@
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
-
-// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import {apiVersion, dataset, projectId} from './env'
 import {schema} from './schemaTypes'
 import {structure} from './structure'
 
 export default defineConfig({
-  name: 'plankton-project',
+  name: 'the-plankton-studio',
   title: 'The Plankton Project',
   basePath: '/studio',
   projectId,

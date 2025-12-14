@@ -67,7 +67,6 @@ export default defineType({
       type: 'array',
       of: [{ type: 'string' }],
       options: {
-        layout: 'tags',
         list: [
           { title: 'Research', value: 'research' },
           { title: 'Education', value: 'education' },
