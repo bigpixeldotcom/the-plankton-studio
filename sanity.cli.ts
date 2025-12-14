@@ -1,9 +1,9 @@
 import {defineCliConfig} from 'sanity/cli'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
-const projectId = import.meta.env.SANITY_STUDIO_PROJECT_ID
-const dataset = import.meta.env.SANITY_STUDIO_DATASET
-const appId = import.meta.env.SANITY_STUDIO_APP_ID
+const projectId = 'vvhbjths'
+const dataset = 'production'
+const appId = 'ashjwf2p6nx86gkfioqtmcsy'
 
 export default defineCliConfig({
   api: {
