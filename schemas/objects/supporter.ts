@@ -1,6 +1,6 @@
 import { defineField, defineType } from 'sanity'
-import { SupportersPreview } from '@/sanity/components/supporters-preview'
-import { Heart } from '@/sanity/lib/fontawesome'
+import { SupportersPreview } from '@/components/supporters-preview'
+import { Heart } from '@/lib/fontawesome'
 
 export default defineType({
   name: 'supporter',

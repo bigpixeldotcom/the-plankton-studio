@@ -1,18 +1,24 @@
+import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+
+// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
+import {apiVersion, dataset, projectId} from '@/env'
+import {schema} from '@/schemaTypes'
+import {structure} from '@/structure'
 
 export default defineConfig({
-  name: 'default',
+  name: 'plankton-project',
   title: 'The Plankton Project',
-
-  projectId: 'vvhbjths',
-  dataset: 'production',
-
-  plugins: [structureTool(), visionTool()],
-
-  schema: {
-    types: schemaTypes,
-  },
+  basePath: '/studio',
+  projectId,
+  dataset,
+  // Add and edit the content schema in the './sanity/schemaTypes' folder
+  schema,
+  plugins: [
+    structureTool({structure}),
+    // Vision is for querying with GROQ from inside the Studio
+    // https://www.sanity.io/docs/the-vision-plugin
+    visionTool({defaultApiVersion: apiVersion}),
+  ],
 })

@@ -1,5 +1,5 @@
 import { defineType, defineArrayMember } from 'sanity'
-import { Superscript } from '@/sanity/lib/fontawesome'
+import { Superscript } from '@/lib/fontawesome'
 
 export default defineType({
   name: 'blockContent',

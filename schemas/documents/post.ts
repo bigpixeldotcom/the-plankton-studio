@@ -1,5 +1,5 @@
 import { defineType, defineField } from 'sanity'
-import { Memo } from '@/sanity/lib/fontawesome'
+import { Memo } from '@/lib/fontawesome'
 
 export default defineType({
   name: 'post',

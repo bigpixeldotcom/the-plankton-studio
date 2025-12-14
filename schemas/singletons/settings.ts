@@ -1,5 +1,5 @@
 import { defineType, defineField } from 'sanity'
-import { Gear } from '@/sanity/lib/fontawesome'
+import { Gear } from '@/lib/fontawesome'
 
 export default defineType({
   name: 'settings',

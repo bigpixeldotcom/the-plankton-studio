@@ -1,5 +1,5 @@
 import { defineType, defineField } from 'sanity'
-import { FileLines } from '@/sanity/lib/fontawesome'
+import { FileLines } from '@/lib/fontawesome'
 
 export default defineType({
   name: 'page',

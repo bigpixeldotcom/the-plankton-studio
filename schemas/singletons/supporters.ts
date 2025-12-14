@@ -1,5 +1,5 @@
 import { defineField, defineType } from 'sanity'
-import { Hearts } from '@/sanity/lib/fontawesome'
+import { Hearts } from '@/lib/fontawesome'
 
 export default defineType({
   name: 'supporters',

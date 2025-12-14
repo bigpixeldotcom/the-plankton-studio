@@ -1,6 +1,6 @@
 // sanity/schemas/documents/author.ts
 import { defineType, defineField } from 'sanity'
-import { UserPen } from '@/sanity/lib/fontawesome'
+import { UserPen } from '@/lib/fontawesome'
 
 export default defineType({
   name: 'author',
